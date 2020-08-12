@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="ContainerStyle.css" />
   </head>
   <body>
-    <model-viewer src="https://murugadasssabarish.github.io/MultiModelAR/chair.glb" shadow-intensity="0.3" ar camera-controls alt="A 3D model carousel">
+    <model-viewer src="./chair.glb" shadow-intensity="0.3" ar camera-controls alt="A 3D model carousel">
   
   <button slot="ar-button" id="ar-button">
     View in your space
@@ -45,7 +45,7 @@
   const modelViewer = document.querySelector("model-viewer");
 
   window.switchSrc = (element, name) => {
-    const base = "https://murugadasssabarish.github.io/MultiModelAR/" + name;
+    const base = "./" + name;
     modelViewer.src = base + '.glb';
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
