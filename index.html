@@ -30,14 +30,12 @@
     View in your space
   </button>
 
-  <div id="ar-prompt">
-    <img src="../assets/hand.png">
-  </div>
+  
 
   <div class="slider">
     <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Chair')" >Normal View</button>
-	  <button class="slide" onclick="switchSrc(this, 'Mixer')" >Xray View</button>
+      <button class="slide selected" onclick="switchSrc(this, 'chair')" style="display: inline-block;">Chair</button>
+	  <button class="slide" onclick="switchSrc(this, 'table')" style="display: inline-block;">Table</button>
 	  
 	  </div>
   </div>
@@ -72,7 +70,6 @@
   }
 
   #ar-button {
-    background-image: url(../assets/ic_view_in_ar_new_googblue_48dp.png);
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: 12px 50%;
@@ -134,9 +131,20 @@
     text-align: center;
     overflow: hidden;
     position: absolute;
+	left: 10px;
     bottom: 16px;
   }
 
+  .btntext {
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+}
+  
   .slides {
     display: flex;
     overflow-x: auto;
